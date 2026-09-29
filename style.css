@@ -1,0 +1,547 @@
+```css
+/* =========================
+   GERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050816;
+    color: #E6EDF7;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Poppins */
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+}
+
+
+/* =========================
+   GERAL
+========================= */
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+main > section[hidden] {
+    display: none;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+
+    color: #050816;
+    background: linear-gradient(
+        135deg,
+        #00F5FF,
+        #00A8FF
+    );
+
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+
+    box-shadow: 0 0 15px #00A8FF55;
+}
+
+.btn-contato button:hover,
+form .btn-enviar input:hover {
+    box-shadow:
+        0 0 10px #00F5FF,
+        0 0 25px #00A8FF66;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+h2.titulo {
+    color: #E6EDF7;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00F5FF;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #8B9BB4;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #00F5FF;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/* =========================
+   TOPO DO SITE
+========================= */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #E6EDF7;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00F5FF;
+    font-size: 40px;
+
+    text-shadow:
+        0 0 10px #00F5FF88,
+        0 0 30px #00A8FF55;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #B8C4D9;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+
+    filter:
+        drop-shadow(0 0 20px #00A8FF55);
+
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+/* =========================
+   ESPECIALIDADES
+========================= */
+
+section.Especialidades {
+    padding: 40px 4%;
+}
+
+section.Especialidades .flex {
+    gap: 60px;
+}
+
+.Especialidades .especialidadesbox {
+    color: #E6EDF7;
+
+    padding: 40px;
+
+    border-radius: 20px;
+    margin-top: 25px;
+
+    background: #0D1424;
+
+    border: 1px solid #1B2A44;
+
+    transition: .2s;
+}
+
+.Especialidades .especialidadesbox:hover {
+    transform: scale(1.05);
+
+    border-color: #00A8FF;
+
+    box-shadow:
+        0 0 10px #00A8FF55,
+        0 0 30px #00A8FF22;
+}
+
+.Especialidades .especialidadesbox i {
+    font-size: 70px;
+    color: #00F5FF;
+
+    text-shadow:
+        0 0 10px #00F5FF88;
+}
+
+.Especialidades .especialidadesbox h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #E6EDF7;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #00F5FF;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    color: #B8C4D9;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: linear-gradient(
+        135deg,
+        #00F5FF,
+        #7C3AED
+    );
+
+    color: #fff;
+
+    font-size: 30px;
+    cursor: pointer;
+
+    margin: 0 5px;
+
+    transition: .2s;
+
+    box-shadow: 0 0 15px #00A8FF44;
+}
+
+.btn-social button:hover {
+    transform: scale(1.1);
+
+    box-shadow:
+        0 0 15px #00F5FF,
+        0 0 30px #7C3AED66;
+}
+
+
+/* =========================
+   PORTFÓLIO
+========================= */
+
+section.prt {
+    padding: 80px 4%;
+
+    box-shadow:
+        0 0 40px 10px #00A8FF0D;
+}
+
+section.prt .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-prt {
+    width: 360px;
+    height: 460px;
+
+    background-size: cover;
+    background-position: 100% 0%;
+
+    transition: 8s;
+
+    cursor: pointer;
+
+    border-radius: 40px;
+
+    position: relative;
+
+    border: 1px solid #1B2A44;
+
+    overflow: hidden;
+}
+
+.img-prt:hover {
+    background-position: 100% 100%;
+
+    border-color: #00A8FF;
+}
+
+.overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00A8FFCC,
+            #7C3AEDCC
+        );
+
+    border-radius: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    color: #fff;
+
+    opacity: 0;
+
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+/* =========================
+   FALE COMIGO
+========================= */
+
+section.falacomigo {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+
+    margin: 40px auto 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    background-color: #0D1424;
+
+    border: 1px solid #1B2A44;
+
+    outline: 0;
+
+    padding: 20px 15px;
+
+    border-radius: 15px;
+
+    color: #fff;
+
+    font-size: 18px;
+
+    transition: .2s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00A8FF;
+
+    box-shadow:
+        0 0 10px #00A8FF33;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #6F819D;
+}
+
+form textarea {
+    resize: none;
+    max-height: 150px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+
+    background: linear-gradient(
+        135deg,
+        #00F5FF,
+        #00A8FF
+    );
+
+    color: #050816;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 40px 4%;
+
+    box-shadow:
+        0 0 40px 10px #00A8FF0D;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .cabe {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: solid #00A8FF 2px;
+}
+
+footer .borda p i {
+    color: #00F5FF;
+    font-size: 20px;
+}
+
+footer .borda p a {
+    color: #E6EDF7;
+}
+
+footer .borda p a:hover {
+    color: #00F5FF;
+}
